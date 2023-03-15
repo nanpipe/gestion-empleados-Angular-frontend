@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center" >Registro Empleado</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Id</label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="empleado.id" name="id" ngModel='{{empleado.id}}' disabled="true">
+        </div>
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="empleado.nombre" name="nombre" ngModel="{{empleado.nombre}}">
+        </div>
+        <div class="form-group">
+            <label>Apellido</label>
+            <input type="text" class="form-control" id="apellido" [(ngModel)]="empleado.apellido" name="apellido" ngModel="{{empleado.apellido}}">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="empleado.email" name="email" ngModel="{{empleado.email}}">
+        </div>
+        <button class="btn btn-success">Actualizar</button>
+    </form>
+
+    </div>
